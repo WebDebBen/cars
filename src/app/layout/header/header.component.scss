@@ -1,0 +1,49 @@
+.me-lg-auto{
+    margin-right: auto;
+}
+
+.header-logo{
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.nav li a{
+    color: #BEBEBE;
+    transition: all 0.2s ease-out;
+
+    &:hover{
+        color: #000;
+    }
+}
+
+.dropdown-menu{
+    right: 0;
+    left: auto;
+}
+
+.ca-btn{
+    border: none;
+    border-radius: 5px;
+    background: #E8551E;
+    color: white;
+    transition: all 0.2s ease-out;
+}
+
+.ca-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+.pst-ad-btn{
+    padding: 0.8rem 1.6rem;
+}
+
+.dropdown{
+    .dropdown-toggle:hover{
+        .dropdown-menu{
+            display: block;
+        }
+    }
+}

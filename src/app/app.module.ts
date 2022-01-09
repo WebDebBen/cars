@@ -7,6 +7,11 @@ import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { CaritemComponent } from './core/component/caritem/caritem.component';
+import { CardetailComponent } from './core/component/cardetail/cardetail.component';
+import { CarsellComponent } from './core/component/carsell/carsell.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +19,16 @@ import { FooterComponent } from './layout/footer/footer.component';
     HomeComponent,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CaritemComponent,
+    CardetailComponent,
+    CarsellComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="car-detail-box">
+            <img src="/assets/imgs/{{this.data.type}}_logo.png" class="car-logo-lg"/>
+            <div class="car-detail-block ">
+                <div class="row align-center">
+                    <div class="col-md-5">
+                        <h2>{{this.data.name}}</h2>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="/assets/imgs/{{this.data.type}}.png" class="car-img-origin">
+                    </div>
+                </div>
+            </div> 
+            <div class="car-detail-property">
+                <div class="row align-center">
+                    <div class="col-md-3 market-status">
+                        <label>Market status</label>
+                        <select class="form-control">
+                            <option value="1">Yesterday</option>
+                            <option value="2">Today</option>
+                            <option value="3">Tomorrow</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 detail-prpt text-gray">
+                        <p><i class="fa fa-user"></i> {{this.data.running}} KM</p>
+                        <div><i class="fa fa-user"></i> {{this.data.address}}</div>
+                    </div>
+                    <div class="col-md-2 detail-prpt text-gray">
+                        <p><i class="fa fa-user"></i> Auto</p>
+                        <div><i class="fa fa-user"></i> Petrol</div>
+                    </div>
+                    <div class="col-md-2 detail-prpt text-center">
+                        <p class="text-bold text-black">{{this.data.searched }}</p>
+                        <div class="text-gray">Searched</div>
+                    </div>
+                    <div class="col-md-2 detail-prpt text-center">
+                        <p class="text-bold text-black">{{this.data.visited}}</p>
+                        <div class="text-gray">Visited</div>
+                    </div>
+                    <div class="col-md-1 detail-prpt text-center">
+                        <p class="text-bold text-black">{{this.data.sold }}</p>
+                        <div class="text-gray">Sold</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

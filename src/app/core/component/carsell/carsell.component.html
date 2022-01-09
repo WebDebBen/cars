@@ -1,0 +1,42 @@
+<div class="car-sell-box">
+    <div class="row mb-32">
+        <div class="col-md-3">
+            <label>Stats of the</label>
+            <select class="form-control">
+                <option value="1">last week</option>
+                <option value="2">yesterday</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Select Country</label>
+            <select class="form-control">
+                <option value="1">last week</option>
+                <option value="2">yesterday</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Select province</label>
+            <select class="form-control">
+                <option value="1">last week</option>
+                <option value="2">yesterday</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <label>Select city</label>
+            <select class="form-control">
+                <option value="1">last week</option>
+                <option value="2">yesterday</option>
+            </select>
+        </div>
+    </div>
+
+    <div *ngFor="let item of data; index as i" class="row car-sell-item">
+        <div class="col-md-10">
+            <label>{{item.type}} <b>{{item.label ? '"' + item.label + '"' : ""}}</b></label>
+            <p><ngb-progressbar [value]="item.percent" [max]="100"></ngb-progressbar></p>
+        </div>
+        <div class="col-md-2">
+            <img src="/assets/imgs/{{item.img}}" class="car-img-sell">
+        </div>
+    </div>
+</div>

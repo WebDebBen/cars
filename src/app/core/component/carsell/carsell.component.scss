@@ -1,0 +1,46 @@
+.car-sell-box ::ng-deep{
+    margin-top: 12px;
+    padding: 48px;
+    background-color: white;
+
+    select{
+        color: #000;
+        font-weight: bold;
+    }
+
+    .progress-bar{
+        background-color: #E8551E;
+        border-radius: 24px;
+    }
+
+    .car-sell-item{
+        margin-bottom: 12px;
+    }
+}
+
+.car-img-sell{
+    width: 85%;
+    float: right;
+}
+
+.progress{
+    background-color: white;
+}
+
+.car-img-origin{
+    width: 100%;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+b{
+    margin-left: 12px;
+    color: black;
+}
+
+label{
+    color: #787878;
+    font-size: 18px;
+}

@@ -1,1 +1,17 @@
-<p>home works!</p>
+<div class="container">
+    <div class="bread-crumb">
+        <span>auto.market</span>
+        <i class="fa fa-angle-right mr-16 ml-16"></i>
+        <span>Market status</span>
+    </div>
+
+    <div class="carousel-cars">
+        <carousel class="carousel-html-content" [cellsToShow]="4" [height]="180">
+            <div *ngFor="let item of cars; index as i" class="carousel-cell {{i==activeIndex ? 'active' :''}}" (click)="select_item(item, i )">
+                <app-caritem [data]="item"></app-caritem>
+            </div>
+        </carousel>
+    </div> 
+    <app-cardetail [data]="curItem"></app-cardetail>
+    <app-carsell [data]="carSells"></app-carsell>
+</div>

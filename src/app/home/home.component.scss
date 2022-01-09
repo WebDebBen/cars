@@ -1,0 +1,59 @@
+.bread-crumb{
+    span{
+        color: #4B4B4B;
+
+        &:last-child{
+            color: black;
+        }
+    }
+}
+
+.carousel-cell{
+    width: 270px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: solid 2px transparent;
+    transition: all 0.2s ease-out;
+    &.active, &:hover{
+        border: solid 2px #E8551E;
+    }
+}
+
+.carousel-cars ::ng-deep{
+    margin-top: 45px;
+
+    .carousel-arrows{
+        .carousel-arrow{
+            border-radius: 7px;
+            transition: all 0.2s ease-out;
+            opacity: 1;
+            &:hover{
+                background-color: #E8551E;
+                color: white;
+
+                &.carousel-arrow-prev{
+                    left: -20px;
+                    background-image: url(/assets/imgs/left_arrow.png);
+                    background-size: 18px;
+                }
+                &.carousel-arrow-next{
+                    right: -20px;
+                    background-image: url(/assets/imgs/right_arrow.png);
+                    background-size: 18px;
+                }
+            }
+        }
+
+        .carousel-arrow-prev{
+            left: -20px;
+            background-image: url(/assets/imgs/left_arrow_g.png);
+            background-size: 18px;
+        }
+        .carousel-arrow-next{
+            right: -20px;
+            background-image: url(/assets/imgs/right_arrow_g.png);
+            background-size: 18px;
+        }
+    }
+}

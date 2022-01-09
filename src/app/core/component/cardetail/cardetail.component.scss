@@ -1,0 +1,36 @@
+.car-detail-box{
+    margin-top: 12px;
+    padding: 48px;
+    background-color: white;
+
+    .car-logo-lg{
+        width: 64px;
+    }
+
+    .car-img-origin{
+        width: 100%;
+    }
+
+    .align-center{
+        align-items: center;
+    }
+
+    .car-detail-property{
+        .market-status{
+            padding-right: 3rem;
+        }
+    }
+
+    .text-bold{
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .text-gray{
+        color: #787878;
+    }
+
+    .text-black{
+        color: #000;
+    }
+}
